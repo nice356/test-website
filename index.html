@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - ระบบปรับไฟหน้ารถอัจฉริยะ</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; }
+        header { background: #68df5dad; color: #fff; padding: 20px; text-align: center; }
+        nav a { color: #000000; margin: 0 15px; text-decoration: none; }
+        nav a:hover { text-decoration: underline; }
+        .container { max-width: 800px; margin: 40px auto; background: #000000; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px rgb(238, 236, 236);}
+        ul { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ระบบปรับไฟหน้ารถอัจฉริยะ</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>ข้อมูล</h2>
+        <p>ระบบปรับไฟหน้ารถอัจฉริยะของ จะช่วยในการลดอัตราการเกิดอุบัติเหตุ ในท้องถนนในตอนกลางคืน</p>
+        <h3>เป้าหมายของโครงการ</h3>
+        <ul>
+            <li>1. เพื่อให้การเดินทางในท้องถนนในตอนกลางคืนปลอดภัยมากขึ้น</li>
+            <li>2. เพื่อลดโอกาสการเกิดอุบัติเหตุในท้องถนน</li>
+            <li>3. เพื่อสนับสนุนการใช้ไฟหน้ารถอัจฉริยะ</li>
+        </ul>
+        <h3>ขอบเขตของโครงงาน</h3>
+        <p>ประชากรที่มีช่วงอายุประมาณ 20-50 ปี ที่มีการใช้รถยนต์ส่วนบุคคลเป็นหลัก ที่อาศัยอยู่ในเขตเมืองใหญ่และบริเวณที่มีแสงน้อย และมีความจำเป็นต้องเดินทางในตอนกลางคืน</p>
+    </div>
+    <script>
+        // Git commands to initialize, add, commit, and push to remote repository
+        const { exec } = require('child_process');
+
+        exec('git init', (err, stdout, stderr) => {
+            if (err) {
+                console.error(`Error initializing git: ${stderr}`);
+                return;
+            }
+            console.log(`Git initialized: ${stdout}`);
+
+            exec('git add .', (err, stdout, stderr) => {
+                if (err) {
+                    console.error(`Error adding files: ${stderr}`);
+                    return;
+                }
+                console.log(`Files added to git: ${stdout}`);
+
+                exec('git commit -m "Initial commit"', (err, stdout, stderr) => {
+                    if (err) {
+                        console.error(`Error committing files: ${stderr}`);
+                        return;
+                    }
+                    console.log(`Files committed: ${stdout}`);
+
+                    exec('git remote add origin https://github.com/nice356/test-website', (err, stdout, stderr) => {
+                        if (err) {
+                            console.error(`Error adding remote repository: ${stderr}`);
+                            return;
+                        }
+                        console.log(`Remote repository added: ${stdout}`);
+
+                        exec('git push -u origin master', (err, stdout, stderr) => {
+                            if (err) {
+                                console.error(`Error pushing to remote repository: ${stderr}`);
+                                return;
+                            }
+                            console.log(`Pushed to remote repository: ${stdout}`);
+                        });
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

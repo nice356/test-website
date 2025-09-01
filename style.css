@@ -1,0 +1,91 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #e0e7ff 0%, #f4f4f4 100%);
+}
+
+header {
+    background: linear-gradient(90deg, #4f46e5 0%, #6366f1 100%);
+    color: #fff;
+    padding: 32px 0 24px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(81, 255, 0, 0.719);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+header h1 {
+    margin: 0 0 12px 0;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+nav {
+    margin-top: 8px;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 18px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 6px 14px;
+    border-radius: 6px;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background: #fff;
+    color: #4f46e5;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 800px;
+    margin: 48px auto;
+    background: #fff;
+    padding: 36px 32px;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(79,70,229,0.10);
+    animation: fadeInUp 1s;
+}
+
+h2 {
+    color: #4f46e5;
+    font-size: 1.7rem;
+    margin-bottom: 18px;
+    font-weight: 600;
+}
+
+h3 {
+    color: #6366f1;
+    margin-top: 32px;
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+ul {
+    margin-top: 12px;
+    margin-bottom: 24px;
+    padding-left: 24px;
+}
+
+ul li {
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+    color: #ffffff;
+}
+
+p {
+    color: #ffffff;
+    font-size: 1.08rem;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px);}
+    to { opacity: 1; transform: translateY(0);}
+}
